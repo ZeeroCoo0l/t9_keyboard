@@ -21,6 +21,7 @@ This is a JavaFX-based text input app that mimics the classic **T9 predictive te
 - Words are loaded into a `TreeMap` keyed by their T9 sequence (e.g., `"4663"` → `"GOOD"`)
 - A `PriorityQueue` ranks word suggestions based on usage frequency and term frequency
 - The UI is built using JavaFX + FXML and updates suggestions in real-time as you "type"
+- Uses a bank of words that is pre-processed in _wordsWithWeight.txt_ with the python library `scikit-learn`.
 
 ---
 
@@ -30,3 +31,5 @@ This is a JavaFX-based text input app that mimics the classic **T9 predictive te
 
 - Java 21+
 - JavaFX SDK (you can configure it through your IDE or via Maven)
+
+> If you want to process your words yourself, I left all words in _wordsFixed.txt_ without the value attached to it!
